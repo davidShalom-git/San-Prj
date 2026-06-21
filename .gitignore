@@ -1,0 +1,14 @@
+frontend/node_modules/
+frontend/dist/
+backend/target/
+backend/jdk-21.0.2/
+backend/apache-maven-3.9.6/
+.idea/
+.vscode/
+gen-lang-client-*.json
+*service-account*.json
+.env
+.env.*
+*.local.bat
+*.local.ps1
+*.log

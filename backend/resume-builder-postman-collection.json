@@ -1,0 +1,174 @@
+{
+  "info": {
+    "name": "Resume Builder API Collection",
+    "_postman_id": "d2a7053d-6c34-4c82-b6fd-4d3f0e91ad2b",
+    "description": "Postman collection for the Resume Builder Spring Boot backend.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fullName\": \"Aarav Sharma\",\n  \"email\": \"aarav.sharma@example.com\",\n  \"phoneNumber\": \"9876543210\",\n  \"address\": \"Bangalore, India\",\n  \"linkedInUrl\": \"https://linkedin.com/in/aaravsharma\",\n  \"githubUrl\": \"https://github.com/aaravsharma\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "users"]
+        }
+      }
+    },
+    {
+      "name": "Create Education",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"degree\": \"B.Tech in Computer Science\",\n  \"collegeName\": \"XYZ Institute of Technology\",\n  \"year\": \"2026\",\n  \"cgpaOrPercentage\": \"8.7 CGPA\",\n  \"userId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/education",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "education"]
+        }
+      }
+    },
+    {
+      "name": "Create Skill",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"skillName\": \"Spring Boot\",\n  \"userId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/skills",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "skills"]
+        }
+      }
+    },
+    {
+      "name": "Create Project",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"projectTitle\": \"Resume Builder\",\n  \"description\": \"A full stack application to create and download resumes.\",\n  \"technologiesUsed\": \"React, Spring Boot, MySQL\",\n  \"userId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/projects",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "projects"]
+        }
+      }
+    },
+    {
+      "name": "Create Experience",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"companyName\": \"Tech Labs\",\n  \"role\": \"Java Intern\",\n  \"duration\": \"Jan 2025 - Apr 2025\",\n  \"description\": \"Worked on REST APIs and database integration.\",\n  \"userId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/experience",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "experience"]
+        }
+      }
+    },
+    {
+      "name": "Create Certification",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"certificationName\": \"Java Programming\",\n  \"organization\": \"Coursera\",\n  \"year\": \"2025\",\n  \"userId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/certifications",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "certifications"]
+        }
+      }
+    },
+    {
+      "name": "Get Resume JSON",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/resume/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "resume", "1"]
+        }
+      }
+    },
+    {
+      "name": "Download Resume PDF",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/resume/1/pdf",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "resume", "1", "pdf"]
+        }
+      }
+    }
+  ]
+}
