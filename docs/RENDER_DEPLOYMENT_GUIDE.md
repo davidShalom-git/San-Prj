@@ -41,10 +41,10 @@ Use these values:
 
 ```text
 Name: resume-builder-backend
-Runtime: Java
-Root Directory: backend
-Build Command: mvn clean package -DskipTests
-Start Command: java -jar target/resume-builder-backend-0.0.1-SNAPSHOT.jar
+Runtime: Docker
+Root Directory: leave empty
+Build Command: leave empty
+Start Command: leave empty
 ```
 
 The backend reads Render's `PORT` automatically through:
@@ -52,6 +52,8 @@ The backend reads Render's `PORT` automatically through:
 ```properties
 server.port=${PORT:8080}
 ```
+
+Render will use the root [Dockerfile](/C:/Users/david/OneDrive/Desktop/java-spr/Dockerfile) to build and run the Spring Boot backend.
 
 ## 4. Add Neon Environment Variables
 

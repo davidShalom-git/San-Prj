@@ -1,0 +1,13 @@
+.git
+.gitignore
+.agents
+.vscode
+.idea
+docs
+frontend
+backend/target
+backend/jdk-21.0.2
+backend/apache-maven-3.9.6
+gen-lang-client-*.json
+*.log
+run-neon.local.ps1
